@@ -78,7 +78,7 @@ form.addEventListener("submit", e => {
       msg.textContent = "Please search for a valid city :(";
     });
 
-  //reset form
+  //Reset form
   msg.textContent = "";
   form.reset();
   input.focus();
