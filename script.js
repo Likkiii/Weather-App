@@ -3,7 +3,7 @@ const input = document.querySelector(".top input");
 const msg = document.querySelector(".top .msg");
 const list = document.querySelector(".js-section .cities");
 
-const { API_KEY } = require('./config');
+const apiKey = "58b4a608d8ec71b61c32b580a1484d9d";
 
 form.addEventListener("submit", e => {
   e.preventDefault();
@@ -36,7 +36,7 @@ form.addEventListener("submit", e => {
     if (filteredArray.length > 0) {
       msg.textContent = `You already know the weather for ${
         filteredArray[0].querySelector(".city-name span").textContent
-      } ... otherwise be more specific by providing the country code as well :)`;
+      } ... be more specific by providing the country code as well :)`;
 
       //Reset form
       form.reset();
@@ -46,7 +46,7 @@ form.addEventListener("submit", e => {
   }
 
   //FETCH
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
 
   fetch(url)
     .then(response => response.json())
