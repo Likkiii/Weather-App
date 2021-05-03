@@ -3,8 +3,6 @@ const input = document.querySelector(".top input");
 const msg = document.querySelector(".top .msg");
 const list = document.querySelector(".js-section .cities");
 
-const apiKey = process.env.API_KEY;
-
 form.addEventListener("submit", e => {
   e.preventDefault();
   let inputVal = input.value;
@@ -46,7 +44,7 @@ form.addEventListener("submit", e => {
   }
 
   //FETCH
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${"58b4a608d8ec71b61c32b580a1484d9d"}&units=metric`;
 
   fetch(url)
     .then(response => response.json())
