@@ -3,4 +3,4 @@
 <p align ="center"><img src = "https://imgur.com/2I0rQVK.png" height = "450px" width = "750px"/></p>
 
 ## Checkout the Site 
-Hosted through Netlify - https://getcurrentweather.netlify.app/
+Hosted using Netlify - https://getcurrentweather.netlify.app/
